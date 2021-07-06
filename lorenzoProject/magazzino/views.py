@@ -27,11 +27,14 @@ def update(request, id):
 		form.save()  
 		return redirect("/show")  
 	return render(request, 'edit.html', {'magazzino': magazzino})  
+
+# old destroy def - doesn't ask for a confirmation
 #def destroy(request, id):  
 	#magazzino = Magazzino.objects.get(id=id)  
 	#magazzino.delete()  
 	#return redirect("/show")  
 	
+# new destroy def -  ask for a confirmation	!!! ( confirm_delete.html extend edit.html )
 def destroy(request, id, template_name='confirm_delete.html'):  
     magazzino = Magazzino.objects.get(id=id)  
     form = MagazzinoForm(request.POST, instance = magazzino)  
