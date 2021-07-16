@@ -26,7 +26,7 @@
 <div class="container bg-dark">		
 	<div class="row">
 		<div class="col-sm">
-			<h4 class="text-warning"> Magazzino v. 0.0.2 </h4>
+			<h4 class="text-warning"> Magazzino 0.0.2 </h4>
 		</div> 
 		<div class="col-sm">
 			<p class="text-warning"> <a href="/maga" class="btn btn-primary"><i class="fas fa-plus-circle"></i> Add New Record</a> </p>
@@ -45,9 +45,7 @@
 		<th>ID</th>  
 		<th>Sub</subkey>  
 		<th>Name</th>  
-		<th>Quantity</th>
-		<th>Code Maker</th>  
-		<th>Code Vendor</th>  
+		<th>Manifacturer</th>  
 		<th>Description</th>  
 		<th>Actions</th>  
 	</tr>  
@@ -57,10 +55,8 @@
 	<tr>  
 		<td>{{ magazzino.eid }}</td>  
 		<td>{{ magazzino.subkey }}</td>  
-		<td>{{ magazzino.ename }}</td>
-		<td>{{ magazzino.quantity }}</td>  
-		<td>{{ magazzino.code_maker }}</td>  
-		<td>{{ magazzino.code_vendor }}</td>  
+		<td>{{ magazzino.ename }}</td>  
+		<td>{{ magazzino.eefirm }}</td>  
 		<td>{{ magazzino.edescription }}</td>  
 		<td>  
 			<a href="/edit/{{ magazzino.id }}"><i class="fas fa-pencil-alt"></i> Edit</span></a>  <br>
